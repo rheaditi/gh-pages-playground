@@ -1,52 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
 
 import './index.css';
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-);
+import MetaData from '../utils/indexMetadata';
 
-const TemplateWrapper = ({ children }) => (
+const DefaultLayout = ({ children, data }) => (
   <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
+    {MetaData({ metaData: data.site.siteMetadata })}
     <div
       style={{
-        margin: '0 auto',
+        margin: '3rem auto',
         maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
@@ -57,8 +21,35 @@ const TemplateWrapper = ({ children }) => (
   </div>
 );
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+DefaultLayout.propTypes = {
+  children: PropTypes.func.isRequired,
+  data: PropTypes.shape({
+    site: PropTypes.object,
+  }).isRequired,
 };
 
-export default TemplateWrapper;
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        description
+        keywords
+        copyright
+        baseUrl
+        openGraph {
+          locale
+          localeAlternate
+        }
+        persona {
+          name
+          handle
+        }
+        appTheme {
+          mainColor
+        }
+      }
+    }
+  }
+`;
+export default DefaultLayout;

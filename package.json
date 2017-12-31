@@ -17,9 +17,11 @@
     "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-typography": "^1.7.10",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "typography": "^0.16.6"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
