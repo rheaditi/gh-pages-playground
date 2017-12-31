@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({ children }) => <div className="card">{children}</div>;
+const Card = ({ children, className }) => (
+  <div className={`card ${className}`}>{children}</div>
+);
 const Body = ({ children }) =>
   children ? <div className="card-body">{children}</div> : null;
 const Footer = ({ children }) =>
@@ -9,10 +11,12 @@ const Footer = ({ children }) =>
 
 Card.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 Card.defaultProps = {
   children: null,
+  className: '',
 };
 
 Body.propTypes = {
