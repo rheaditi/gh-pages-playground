@@ -23,6 +23,7 @@ const persona = {
 
 const site = {
   baseUrl: `http://aditimohanty.com`,
+  pathPrefix: `gh-pages-playground`,
   title: `${persona.name} | Front-End Engineer, Bangalore, India`,
   description: `${persona.name} (@${persona.handle}), a female human from
 ${persona.location} - ❤s Javascript, video-games & music. Employed
@@ -41,7 +42,9 @@ const appTheme = {
 };
 
 const siteMetadata = {
+  siteUrl: `${site.baseUrl}/${site.pathPrefix}`,
   baseUrl: site.baseUrl,
+  pathPrefix: site.pathPrefix,
   title: site.title,
   description: site.description,
   keywords: `Aditi Mohanty, Aditi Anomita Mohanty, rheaditi, rhea aditi, Rhea Aditi Mohanty,

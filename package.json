@@ -16,9 +16,11 @@
   "dependencies": {
     "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.32",
+    "gatsby-plugin-canonical-urls": "^1.0.10",
     "gatsby-plugin-manifest": "^1.0.12",
     "gatsby-plugin-postcss-sass": "^1.0.15",
     "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sitemap": "^1.2.9",
     "gatsby-plugin-typography": "^1.7.10",
     "postcss-cssnext": "^3.0.2",
     "postcss-preset-env": "^1.0.0",
@@ -41,6 +43,7 @@
   },
   "browserslist": [
     "> 1%",
+    "IE >= 10",
     "last 2 versions"
   ]
 }

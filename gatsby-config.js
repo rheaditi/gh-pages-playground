@@ -73,6 +73,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: siteMetadata.siteUrl,
+      },
+    },
   ],
-  pathPrefix: `gh-pages-playground`,
+  pathPrefix: siteMetadata.pathPrefix,
 };
