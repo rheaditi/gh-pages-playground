@@ -1,0 +1,26 @@
+body, .theme-light {
+  background-color: $theme-light-bg;
+  color: $theme-light-text;
+}
+
+.theme-dark {
+  background-color: $theme-dark-bg;
+  color: $theme-dark-text;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 20%);
+    transition: color 0.6s ease-out;
+  }
+
+  .theme-dark & {
+    color: $secondary;
+
+    &:hover {
+      color: lighten($secondary, 20%);
+      transition: color 0.3s ease-out;
+    }
+  }
+}
