@@ -1,47 +1,9 @@
 const postcssNext = require('postcss-cssnext');
 const postcssPresetEnv = require('postcss-preset-env');
-
-const me = {
-  name: `Aditi Mohanty`,
-  fullName: `Aditi Anomita Mohanty`,
-  handle: `rheaditi`,
-  location: `Bangalore, India`,
-};
-
-const site = {
-  baseUrl: `http://aditimohanty.com`,
-  title: `${me.name} | Front-End Engineer, Bangalore, India`,
-  description: `${me.name} (@${me.handle}), a female human from ${me.location}\
-- ❤s Javascript, video-games & music. Employed at ClearTax.in.`,
-};
-
-const openGraph = {
-  locale: `en_IN`,
-  localeAlternate: `en_US`,
-};
-
-const appTheme = {
-  mainColor: '#5A50C7',
-  backgroundColor: `#5A50C7`,
-};
+const siteMetadata = require('./site-meta-data');
 
 module.exports = {
-  siteMetadata: {
-    baseUrl: site.baseUrl,
-    title: site.title,
-    description: site.description,
-    keywords: `Aditi Mohanty, Aditi Anomita Mohanty, rheaditi, rhea aditi, Rhea Aditi Mohanty,
-    developer, web developer, front end developer, software engineer,
-    Bangalore, Bengaluru, India, Karnataka,
-    Bhubaneshwar, Odisha, Orissa,
-    PESIT, PES Institute of Technology, PESSE, PESU,
-    UI, UX, User Interface, User Experience,
-    Web, Designer, Developer, Engineer`,
-    copyright: `Aditi Anomita Mohanty, Copyright (c) ${new Date().getFullYear()}`,
-    persona: me,
-    openGraph,
-    appTheme,
-  },
+  siteMetadata,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -60,13 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: me.fullName,
-        short_name: `@${me.handle}`,
-        description: site.description,
+        name: siteMetadata.persona.fullName,
+        short_name: `@${siteMetadata.persona.handle}`,
+        description: siteMetadata.description,
 
         display: 'standalone',
-        background_color: appTheme.backgroundColor,
-        theme_color: appTheme.mainColor,
+        background_color: siteMetadata.appTheme.backgroundColor,
+        theme_color: siteMetadata.appTheme.mainColor,
 
         start_url: './?utm_source=app_manifest',
         lang: `en-In`,
