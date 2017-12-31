@@ -1,3 +1,6 @@
+const postcssNext = require('postcss-cssnext');
+const postcssPresetEnv = require('postcss-preset-env');
+
 const me = {
   name: `Aditi Mohanty`,
   fullName: `Aditi Anomita Mohanty`,
@@ -41,6 +44,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        postCssPlugins: [postcssNext, postcssPresetEnv],
+        precision: 8,
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

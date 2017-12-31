@@ -34,7 +34,10 @@ const MetaData = ({ metaData }) => (
       { name: 'msapplication-TileColor', content: metaData.appTheme.mainColor },
       { name: 'theme-color', content: metaData.appTheme.mainColor },
     ]}
-  />
+    link={[{ rel: 'canonical', href: metaData.baseUrl }]}
+  >
+    <body className="theme-dark" />
+  </Helmet>
 );
 
 MetaData.propTypes = {

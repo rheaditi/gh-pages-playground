@@ -1,0 +1,8 @@
+$primary: #5A50C7;
+$secondary: #50DEFF;
+$light-gray: #EFEFF7;
+
+$theme-light-bg: $light-gray;
+$theme-light-text: darken($primary, 35%);
+$theme-dark-bg: $primary;
+$theme-dark-text: $light-gray;
