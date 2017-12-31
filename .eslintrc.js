@@ -13,15 +13,10 @@ module.exports = {
     env: {
         browser: true,
         node: true,
-        jquery: true,
         jest: true,
     },
     globals: {
-        __DEV__: true,
-        __PROD__: true,
-        $: true,
-        jQuery: true,
-        Foundation: true,
+        graphql: true
     },
     rules: {
         'jsx-a11y/anchor-is-valid': [ERROR, {
