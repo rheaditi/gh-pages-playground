@@ -35,9 +35,7 @@ const MetaData = ({ metaData }) => (
       { name: 'theme-color', content: metaData.appTheme.mainColor },
     ]}
     link={[{ rel: 'canonical', href: metaData.baseUrl }]}
-  >
-    <body className="theme-dark" />
-  </Helmet>
+  />
 );
 
 MetaData.propTypes = {

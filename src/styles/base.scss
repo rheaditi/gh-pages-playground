@@ -1,27 +1,27 @@
-body, .theme-light {
+.theme-light {
   background-color: $theme-light-bg;
   color: $theme-light-text;
 }
 
-.theme-dark {
+body, .theme-dark {
   background-color: $theme-dark-bg;
   color: $theme-dark-text;
 }
 
-a {
+a, .theme-light a {
   color: $primary;
   &:hover {
     color: darken($primary, 20%);
     transition: color 0.6s ease-out;
   }
+}
 
-  .theme-dark & {
-    color: $secondary;
+.theme-dark a {
+  color: $secondary;
 
-    &:hover {
-      color: lighten($secondary, 20%);
-      transition: color 0.3s ease-out;
-    }
+  &:hover {
+    color: lighten($secondary, 20%);
+    transition: color 0.3s ease-out;
   }
 }
 
