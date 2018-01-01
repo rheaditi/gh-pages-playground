@@ -1,15 +1,18 @@
-$font-weight-light    : 200;
+$font-weight-light    : 300;
 $font-weight-regular  : 400;
-$font-weight-semibold : 600;
+$font-weight-semibold : 400;
 
 $default-line-height: 1.64;
 $default-font-size: 16px;
 $default-font-weight: $font-weight-regular;
-$default-font-stack: Arial, Helvetica, sans-serif;
-$exo-font-stack: 'Exo 2', Arial, Helvetica, sans-serif;
+$default-font-stack: Helvetica, Arial, sans-serif;
+$rubik-font-stack: 'Rubik', Helvetica, Arial, sans-serif;
+$exo-font-stack: 'Exo 2', Helvetica, Arial, sans-serif;
 
-$text-default: #666;
+$text-default: #928FB3;
 $default-font-color: $text-default;
 
-$bg-gradient-start: #ff9a9e;
-$bg-gradient-end  : #fad0c4;
+$primary: #5A50C7;
+$bg-gray: #EFEFF7;
+$bg-gradient-start: #5A50C7;
+$bg-gradient-end  : #5A50C7;

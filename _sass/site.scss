@@ -9,8 +9,8 @@ body {
   line-height: $default-line-height;
   color: $default-font-color;
 
-  .exo-font-loaded & {
-    font-family: $exo-font-stack;
+  .main-font-loaded & {
+    font-family: $rubik-font-stack;
   }
 }
 
@@ -76,11 +76,13 @@ header, main { margin-bottom: 2.5rem; }
 a {
   &, &:active, &:visited {
     font-weight: $font-weight-semibold;
-    color: lighten($default-font-color, 10%);
+    color: $primary;
     text-decoration: none; 
+    border-bottom: 1px solid $primary;
   }
 
   &:hover {
-    color: $default-font-color;
+    color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
   }
 }

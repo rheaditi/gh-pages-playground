@@ -2,6 +2,8 @@
 # Variables accessible in the templates via {{ site.myvariable }}.
 title: "Aditi Mohanty | Front-End Engineer, Bangalore, India"
 entity:
+  first_name: "Aditi"
+  last_name: "Mohanty"
   name: "Aditi Mohanty"
   fullname: "Aditi Anomita Mohanty"
 
@@ -13,7 +15,7 @@ keywords: >
   UI, UX, User Interface, User Experience, Web, Designer, Developer, Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://aditimohanty.com" # the base hostname & protocol for your site, e.g. http://example.com
-theme_color: "#ff9a9e"
+theme_color: "#5A50C7"
 
 social:
   twitter: "https://twitter.com/rheaditi"

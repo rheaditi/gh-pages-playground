@@ -4,7 +4,7 @@ output: true
 {
   "name": "Aditi Mohanty",
   "short_name": "@rheaditi",
-  "background_color": "#ff9a9e",
+  "background_color": "#5A50C7",
   "theme_color": "{{ site.theme_color }}",
   "description": "{{ site.description }}",
   "display": "standalone",

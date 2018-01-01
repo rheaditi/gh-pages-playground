@@ -8,13 +8,14 @@
 }
 
 h1.name {
-  text-transform: uppercase;
-  font-weight: $font-weight-light;
-  letter-spacing: 0.5rem;
+  text-transform: lowercase;
+  font-weight: $font-weight-regular;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.8rem;
   line-height: 1;
+  color: $primary;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     font-size: 3rem;
@@ -23,14 +24,12 @@ h1.name {
 
 .card {
   background-color: #FFFFFF;
-  background-color: rgba(255,255,255, 0.8);  
   width: 600px;
   max-width: 95%;
+  overflow: hidden;
   
   box-shadow: 0rem 1.125rem 4.125rem 0rem rgba(0,0,0,0.1);
   border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
-
-  padding: 3rem 4rem;
 
   transition: box-shadow 0.25s ease 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, -webkit-transform 0.25s ease 0s, -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;  
   transition: box-shadow 0.25s ease 0s, transform 0.25s ease 0s, transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;  
@@ -56,6 +55,19 @@ h1.name {
       height: 100%;
     }
   }
+
+  .card-body, .card-footer {
+    padding: 2rem;
+  }
+
+  .card-body + .card-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .card-footer {
+    background-color: $bg-gray;
+  }
 }
 
 .social {
@@ -63,6 +75,7 @@ h1.name {
   list-style: none;
   font-size: 1.2rem;
   letter-spacing: 0;
+  margin: 0;
 
   li {
     vertical-align: middle;
