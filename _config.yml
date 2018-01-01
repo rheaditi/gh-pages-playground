@@ -16,6 +16,7 @@ keywords: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://aditimohanty.com" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: "#5A50C7"
+icon_cache_key: "1514819304565"
 
 social:
   twitter: "https://twitter.com/rheaditi"
