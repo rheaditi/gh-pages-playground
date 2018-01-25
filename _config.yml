@@ -13,7 +13,7 @@ keywords: >
   front end developer, software engineer, Bangalore, Bengaluru, India, Karnataka, Bhubaneshwar, Odisha, Orissa,
   PESIT, PES Institute of Technology, PESSE, PESU,
   UI, UX, User Interface, User Experience, Web, Designer, Developer, Engineer
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "gh-pages-playground" # the subpath of your site, e.g. /blog
 url: "http://aditimohanty.com" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: "#5A50C7"
 icon_cache_key: "1514819304565"
@@ -38,12 +38,7 @@ social:
   deviantart: "https://rheaditi.deviantart.com"
 ga:
   trackingId: "UA-97738324-1"
-og:
-  image:
-    url: "/img/aditimohanty.jpeg"
-    width: "400"
-    height: "400"
-    mimetype: "image/jpeg"
+
 # Build settings
 markdown: kramdown
 # plugins:
