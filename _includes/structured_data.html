@@ -1,15 +1,17 @@
+{% assign persona = site.data.persona %}
+{% assign social = site.data.social %}
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Person",
-    "name": "Aditi Mohanty",
-    "givenName": "Aditi",
-    "additionalName": "Anomita",
-    "familyName": "Mohanty",
-    "alternateName": "Rhea Aditi Mohanty",
-    "gender": "Female",
-    "birthDate": "1993-11-15",
-    "url": "{{ site.url }}",
+    "name": "{{ persona.name }}",
+    "givenName": "{{ persona.first_name }}",
+    "additionalName": "{{ persona.middle_name }}",
+    "familyName": "{{ persona.middle_name }}",
+    "alternateName": "{{ persona.alternate_name }}",
+    "gender": "{{ persona.gender }}",
+    "birthDate": "{{ persona.birth_date }}",
+    "url": "{{ "/" | prepend: site.baseurl }}",
     "worksFor": {
       "@context" : "http://schema.org",
       "@type" : "Organization",
@@ -19,35 +21,24 @@
       "@type": "City",
       "name": "Bangalore"
     },
-    "jobTitle": "Front-End Engineer",
+    "jobTitle": "{{ persona.job_title }}",
     "sameAs": [
-        "{{ site.social.twitter }}",
-        "{{ site.social.github }}",
-        "{{ site.social.facebook }}",
-        "{{ site.social.linkedin }}",
-        "{{ site.social.medium }}",
-        "{{ site.social.googleplus }}",
-        "{{ site.social.quora }}",
-        "{{ site.social.angellist }}",
-        "{{ site.social.dribbble }}",
-        "{{ site.social.instagram }}",
-        "{{ site.social.codepen }}",
-        "{{ site.social.youtube }}",
-        "{{ site.social.doselect }}",
-        "{{ site.social.lastfm }}"
+    {% for social_item in social %}
+    "{{ social_item.url }}"{% unless forloop.last == true %},{% endunless %}
+    {% endfor %}
     ],
-    "alumniOf": "PES Institute of Technology, Bangalore South Campus"
+    "alumniOf": "{{ persona.alumni_of }}"
   }
 </script>
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "url": "{{ site.url }}",
+    "url": "{{ page.url | prepend: site.baseurl }}",
     "name": "{{ site.title }}",
     "author": {
       "@type": "Person",
-      "name": "Aditi Mohanty"
+      "name": "{{ persona.name }}"
     }
   }
 </script>
