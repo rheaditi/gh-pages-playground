@@ -1,84 +1,51 @@
 .main-gradient {
   background-color: $bg-gradient-end;
-  background-image: -webkit-linear-gradient(297deg, $bg-gradient-start 0%, $bg-gradient-end 100%);
-  background-image: -o-linear-gradient(297deg, $bg-gradient-start 0%, $bg-gradient-end 100%);
-  background-image: linear-gradient(153deg, $bg-gradient-start 0%, $bg-gradient-end 100%);
-  background-size: cover;
-  background-repeat: repeat;
 }
 
 h1.name {
   text-transform: lowercase;
   font-weight: $font-weight-regular;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.8rem;
-  line-height: 1;
   color: $primary;
   position: relative;
-
-  @media screen and (min-width: 768px) {
-    font-size: 3rem;
-  }
+  margin-top: 0;
 }
 
 .card {
-  background-color: #FFFFFF;
+  background-color: #fff;
   width: 600px;
   max-width: 95%;
   overflow: hidden;
-  
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 
-  .card-body, .card-footer {
-    padding: 2rem;
-  }
-
-  .card-body + .card-footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
+  .card-body,
   .card-footer {
-    background-color: $bg-gray;
+    padding: 54px 40px;
   }
 }
 
 .social {
   padding: 0;
-  list-style: none;
-  font-size: 1.2rem;
-  letter-spacing: 0;
   margin: 0;
 
-  li {
-    vertical-align: middle;
-    margin: 0.2rem;
-    opacity: 0.3;
-    transition: opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
-    -webkit-transition: opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  li,
+  a {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 5px;
+  }
 
-    &:hover {
-      opacity: 0.5;
-    }
-    
-    &, a {
-      display: inline-block;
-    }
+  li a {
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.65em;
+    background-color: $bg-gray;
+    padding: 6px 10px;
+    border-radius: 3px;
+    transition: transform 0.15s ease-out;
+  }
 
-    a {
-      border: 1px solid #000;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      text-align: center;
-      line-height: 2rem;
-    }
-
-    img {
-      width: 16px;
-      height: 16px;
-    }
+  li a:hover {
+    transform: translateY(-2px);
   }
 }

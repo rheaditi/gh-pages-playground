@@ -1,26 +1,40 @@
+<ul class="social">
+{% for presence in site.data.social %}{% if presence.display %}
+  <li>
+    <a href="{{ presence.url }}" title="{{ presence.title }}" rel="nofollow">{{ presence.name }}</a>
+  </li>
+{% endif %}{% endfor %}
+</ul>
+
+{% comment %}
 <ul class="r-social">
   <li>
     <a href="{{ site.social.github }}" title="Aditi Mohanty, rheaditi on GitHub" rel="nofollow" target="_blank">
-      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/github-circle.png 1x, /img/icon-{{ site.icon_cache_key }}/github-circle@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/github-circle@2x.png 3x" width="24" height="24" alt="@rheaditi on GitHub">
+      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/github-circle.png 1x, /img/icon-{{ site.icon_cache_key }}/github-circle@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/github-circle@2x.png 3x"
+        width="24" height="24" alt="@rheaditi on GitHub">
       </amp-img>
     </a>
   </li>
   <li>
     <a href="{{ site.social.twitter }}" title="Aditi Anomita Mohanty - @rheaditi on Twitter" rel="nofollow" target="_blank">
-      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/twitter-circle.png 1x, /img/icon-{{ site.icon_cache_key }}/twitter-circle@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/twitter-circle@3x.png 3x" width="24" height="24" alt="@rheaditi on Twitter">
+      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/twitter-circle.png 1x, /img/icon-{{ site.icon_cache_key }}/twitter-circle@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/twitter-circle@3x.png 3x"
+        width="24" height="24" alt="@rheaditi on Twitter">
       </amp-img>
     </a>
   </li>
   <li>
     <a href="{{ site.social.medium }}" title="Aditi Mohanty, @rheaditi on Medium | CampVanilla" rel="nofollow" target="_blank">
-      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/medium.png 1x, /img/icon-{{ site.icon_cache_key }}/medium@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/medium@3x.png 3x" width="24" height="24" alt="@rheaditi on Medium">
+      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/medium.png 1x, /img/icon-{{ site.icon_cache_key }}/medium@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/medium@3x.png 3x"
+        width="24" height="24" alt="@rheaditi on Medium">
       </amp-img>
     </a>
   </li>
   <li>
     <a href="{{ site.social.linkedin }}" title="Aditi Mohanty on LinkedIn" rel="nofollow" target="_blank">
-      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/linkedin-box.png 1x, /img/icon-{{ site.icon_cache_key }}/linkedin-box@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/linkedin-box@3x.png 3x" width="24" height="24" alt="Aditi Mohanty on LinkedIn">
+      <amp-img srcset="/img/icon-{{ site.icon_cache_key }}/linkedin-box.png 1x, /img/icon-{{ site.icon_cache_key }}/linkedin-box@2x.png 2x, /img/icon-{{ site.icon_cache_key }}/linkedin-box@3x.png 3x"
+        width="24" height="24" alt="Aditi Mohanty on LinkedIn">
       </amp-img>
     </a>
   </li>
 </ul>
+{% endcomment %}

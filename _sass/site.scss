@@ -3,10 +3,8 @@
 }
 
 body {
-  font-size: $default-font-size;
   font-family: $default-font-stack;
   font-weight: $default-font-weight;
-  line-height: $default-line-height;
   color: $default-font-color;
 
   .main-font-loaded & {
@@ -44,40 +42,16 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
-.separator-v {
-  margin: 0 1rem;
-}
-
-.separator-h {
-  margin: 2rem auto;
-  width: 100%;
-  position: relative;
-  padding: 0;
-  border: 0;
-  height: 1rem;
-  line-height: 1rem;
-  text-align: center;
-
-  &:before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    width: 20%;
-    background-color: lighten($default-font-color, 30%);
-    height: 1px;
-  }
-}
-
-header, main { margin-bottom: 2.5rem; }
 
 a {
-  &, &:active, &:visited {
+  &,
+  &:active,
+  &:visited {
     font-weight: $font-weight-semibold;
     color: $primary;
-    text-decoration: none; 
+    text-decoration: none;
     border-bottom: 1px solid $primary;
   }
 
