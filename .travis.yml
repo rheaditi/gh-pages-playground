@@ -1,3 +1,4 @@
+script: bundle exec jekyll build
 deploy:
   provider: pages
   skip-cleanup: true
