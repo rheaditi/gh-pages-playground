@@ -1,7 +1,0 @@
-@mixin grid-lines() {
-  background-image: url("/img/27.png");
-
-  &:active {
-    background-image: none;
-  }
-}
