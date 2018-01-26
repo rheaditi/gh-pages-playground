@@ -48,6 +48,7 @@ markdown: kramdown
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - vendor # https://github.com/jekyll/jekyll/issues/2938
   - pages/gridline.html
 #   - Gemfile
 #   - Gemfile.lock
