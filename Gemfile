@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'image_optim'
 gem 'jekyll', '~> 3.6.2'
 
 # If you have any plugins, put them here!

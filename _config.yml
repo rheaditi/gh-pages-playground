@@ -29,3 +29,15 @@ assets:
   sources:
   - "css"
   - "img"
+  plugins:
+    img:
+      optim:
+        default:
+          verbose: true
+        zero_png:
+          advpng:
+            level: 0
+          optipng:
+            level: 0
+          pngout:
+            strategy: 4
