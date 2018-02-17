@@ -23,3 +23,8 @@ exclude:
   - Gemfile.lock
   - node_modules
   - script
+
+assets:
+  gzip: true
+  sources:
+  - "css"

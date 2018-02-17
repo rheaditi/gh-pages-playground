@@ -1,0 +1,10 @@
+$screen-medium: "screen and (min-width: 768px)";
+$screen-large : "screen and (min-width: 1024px)";
+$screen-small-only : "screen and (min-width: 0) and (max-width: 767px)";
+$screen-medium-only : "screen and (min-width: 768px) and (max-width: 1023px)";
+
+/* Usage: 
+  @media #{$screen-medium}
+  @media #{$screen-large}
+  @media #{$screen-small-only}
+*/

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+<head>
+{% include head.html %}
+{% contentblock head_end %}
+</head>
+<body>
+{% contentblock body_start %}
+<header>
+  {% unless page.no_nav %}{% include components/navbar.html %}{% endunless %}
+</header>
+<main>{{ content }}</main>
+{% unless page.no_footer %}{% include components/footer.html %}{% endunless %}
+{% contentblock body_end %}
+</body>
+</html>
