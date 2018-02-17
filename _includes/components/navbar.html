@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <div class="container">
+      <ul>
+          {% for item in site.data.navigation.items %}<li class="navbar-item">
+            <a href="{% unless item.absolute_url %}{{ item.url | prepend:site.baseurl }}{% else %}{{ item.url }}{% endunless %}"
+              title="{{ item.title }}">
+              {{ item.text }}
+            </a>
+          </li>{% endfor %}
+        </ul>
+  </div>
+</nav>

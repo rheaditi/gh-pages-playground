@@ -1,4 +1,5 @@
-$black     : #212121;
-$hotpink   : #FE4064;
-$indigo    : #5A50C7;
-$light-gray: #EEEEEE;
+$text-black      : #212121;
+$text-black-hover: lighten($text-black, 20%);
+$hotpink         : #FE4064;
+$indigo          : #5A50C7;
+$light-gray      : #EEEEEE;

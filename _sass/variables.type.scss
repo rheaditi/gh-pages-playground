@@ -1,8 +1,11 @@
 /* Vertical Rhythm - Generated on https://www.gridlover.net/ */
 $base-font-stack: 'Rubik', Helvetica, Arial, sans-serif;
+$base-line-height: 1.5789474rem;
+
 @mixin type_root {
   font-size: 19px;
   line-height: 30px;
+  color: $text-black;
 }
 
 @mixin type_body {

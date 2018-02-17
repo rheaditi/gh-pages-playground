@@ -1,0 +1,42 @@
+.body-nav-offset { padding-top: 65px; }
+
+.navbar {
+  border-bottom: 1px solid $light-gray;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 1px 7px rgba(50, 50, 93, 0.11);
+
+  position: fixed;
+  top: 0;
+  
+  ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+}
+
+.navbar-item {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease-out;
+
+  &:hover {
+    border-bottom: 1px solid $hotpink;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $text-black;
+    transition: color 0.3s ease-out;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    line-height: $base-line-height;
+  }
+
+  a:hover {
+    color: $text-black-hover;
+  }
+}
