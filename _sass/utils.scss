@@ -22,12 +22,30 @@
   text-align: center;
 }
 
+.t-light {
+  color: lighten($color: $text-black, $amount: 20%);
+}
+
 .card {
   background-color: #FFFFFF;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.card-content {
-  padding: 20px 15px;
+.card.pink-top {
+  position: relative;
+  &::before {
+    background: linear-gradient(to right, $hotpink, adjust-hue($color: $hotpink, $degrees: 90), adjust-hue($color: $hotpink, $degrees: 180));
+    content: '';
+    left: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+  }
 }
+
+.card-content {
+  padding: 30px;
+}
+

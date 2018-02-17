@@ -15,3 +15,41 @@
 .work-section {
   padding-bottom: 100px;
 }
+
+.card-content {
+  a {
+    display: block;
+    line-height: $base-line-height;
+    text-decoration: none;
+    color: $text-black;
+  }
+}
+
+.work-meta {
+  position: relative;
+  padding-left: 90px;
+  clear: both;
+
+  .time {
+    font-size: 0.8em;
+    margin-top: -10px;
+  }
+
+  h3, p {
+    padding-left: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.work-img {
+  float: left;
+  word-wrap: normal;
+  white-space: nowrap;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  will-change: transform;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -90px;
+}

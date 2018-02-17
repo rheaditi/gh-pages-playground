@@ -16,15 +16,29 @@ permalink: /
     {% include components/social-box.html %}
   </div>
   <div class="container">
-    <h2 class="h3">/work</h2>
-    <div class="card"><div class="card-content">
-        <div class="work-meta">
-            <amp-img 
-              alt="cleartax.in"
-              width="75"
-              height="75"
-              srcset="{% asset_path cleartax_pinchy.png %}, {% asset_path cleartax_pinchy@2x.png %} 2x" />
+    <h2 class="h3">/ work</h2>
+    <div class="card">
+      <div class="card-content">
+        <a href="https://cleartax.in">
+          <div class="work-meta">
+            <amp-img alt="cleartax.in" width="75" height="75" class="work-img" srcset="{% asset_path cleartax_pinchy.png %}, {% asset_path cleartax_pinchy@2x.png %} 2x">
+            </amp-img>
+            <h3 class="m0">cleartax.in</h3>
+            <p class="time w-light t-light">Software Engineer (Front-End) • Dec 2016 - Present</p>
           </div>
-    </div></div><!-- end card -->
+        </a>
+      </div>
+
+      <div class="card-content">
+          <a href="https://cleartax.in">
+            <div class="work-meta">
+              <amp-img alt="cleartax.in" width="75" height="75" class="work-img" srcset="{% asset_path sabre_logo.png %}, {% asset_path sabre_logo@2x.png %} 2x">
+              </amp-img>
+              <h3 class="m0">GetThere - Sabre Travel Tech</h3>
+              <p class="time w-light t-light">Software Engineer (Front-End) • Dec 2016 - Present</p>
+            </div>
+          </a>
+        </div>
+    </div>
   </div>
 </section>
