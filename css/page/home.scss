@@ -1,0 +1,17 @@
+@import "../_sass/variables.colors";
+@import "../_sass/variables.type";
+@import "../_sass/variables.layout";
+
+.hero {
+  text-align: center;
+  padding: 75px 0;
+}
+
+@import "../../_sass/components/social-box";
+.section-heading {
+
+}
+
+.work-section {
+  padding-bottom: 100px;
+}

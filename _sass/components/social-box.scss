@@ -1,0 +1,11 @@
+.social-box {
+  padding: 20px 30px;
+  margin: 0;
+  display: inline-block;
+  background-color: $hotpink;
+  color: white;
+  will-change: transform;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  overflow: hidden;
+}

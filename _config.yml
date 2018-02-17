@@ -28,3 +28,4 @@ assets:
   gzip: true
   sources:
   - "css"
+  - "img"

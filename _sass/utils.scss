@@ -5,3 +5,29 @@
 .m0, .mb0 {
   margin-bottom: 0;
 }
+
+.m10, .mt10 {
+  margin-top: 10px;
+}
+
+.m10, .mb10 {
+  margin-bottom: 10px;
+}
+
+.w-light {
+  font-weight: 200;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px 15px;
+}

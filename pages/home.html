@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /
+---
+{% contentfor page_styles %}{% asset page/home.scss %}{% endcontentfor %}
+{% contentfor header %}
+<section class="hero">
+  <div class="container">
+    <h1 class="mb0 responsive">/ aditi mohanty /</h1>
+    <p class="h3 w-light mt10 responsive">Front-End Engineer · Bangalore, India</p>
+  </div>
+</section>
+{% endcontentfor %}
+<section class="section bg-gray has-overlap work-section">
+  <div class="container t-center">
+    {% include components/social-box.html %}
+  </div>
+  <div class="container">
+    <h2 class="h3">/work</h2>
+    <div class="card"><div class="card-content">
+        <div class="work-meta">
+            <amp-img 
+              alt="cleartax.in"
+              width="75"
+              height="75"
+              srcset="{% asset_path cleartax_pinchy.png %}, {% asset_path cleartax_pinchy@2x.png %} 2x" />
+          </div>
+    </div></div><!-- end card -->
+  </div>
+</section>
