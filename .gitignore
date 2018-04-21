@@ -2,3 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 .asset-cache
+.cache
+node_modules
+yarn-error.log
