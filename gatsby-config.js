@@ -1,6 +1,10 @@
+const site = require('./data/site');
+
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Default Starter',
-  },
-  plugins: ['gatsby-plugin-react-helmet'],
-}
+  pathPrefix: site.pathPrefix,
+  siteMetadata: site,
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass'
+  ],
+};
