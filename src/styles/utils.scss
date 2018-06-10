@@ -1,0 +1,17 @@
+@import './_vars.scss';
+
+.t-center {
+  text-align: center;
+}
+
+.t-regular {
+  font-weight: $font-weight-regular;
+}
+
+.t-light {
+  font-weight: $font-weight-light;
+}
+
+.t-bold {
+  font-weight: $font-weight-bold;
+}

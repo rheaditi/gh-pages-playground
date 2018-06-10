@@ -1,0 +1,21 @@
+@import '../styles/_colors.scss';
+@import '../styles/_vars.scss';
+@import '../styles/base.scss';
+@import '../styles/typography.scss';
+@import '../styles/utils.scss';
+
+.skewed {
+  padding: 150px 0;
+  transform: skew(0deg, -#{$skew-y}deg);
+  transform-origin: 0;
+
+  > .content {
+    transform: skew(0deg, #{$skew-y}deg);
+  }
+}
+
+.background-purple {
+  background: $purple;
+  color: $white;
+  background-image: linear-gradient(145deg, #9E7CFC 0%, #4E48E8 95%);
+}
