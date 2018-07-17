@@ -1,16 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-const Layout = ({ children }) => (
-  <div>
+const Layout = ({ children, data }) => (
+  <Helmet
+    title={data.site.siteMetadata.title}
+  >
     {children}
-  </div>
+  </Helmet>
 );
 
 Layout.defaultProps = {
   children: null,
 };
 
-Layout.propTypes = {
-  children: PropTypes.element,
-};
+export default Layout;
+
+export const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
