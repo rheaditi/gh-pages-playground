@@ -1,4 +1,7 @@
-_site
-.sass-cache
-.jekyll-metadata
-.asset-cache
+# Project dependencies
+.cache
+node_modules
+npm*.log
+
+# etc
+.DS_Store
