@@ -1,12 +1,18 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
+
+import Page from '../components/page';
 
 const Layout = ({ children, data }) => (
-  <Helmet
-    title={data.site.siteMetadata.title}
-  >
-    {children}
-  </Helmet>
+  <div>
+    <Helmet>
+      <title>{data.site.siteMetadata.title}</title>
+      <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' />
+    </Helmet>
+    <Page>
+      {children()}
+    </Page>
+  </div>
 );
 
 Layout.defaultProps = {
