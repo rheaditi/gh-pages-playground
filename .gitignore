@@ -1,4 +1,2 @@
-_site
-.sass-cache
-.jekyll-metadata
-.asset-cache
+node_modules
+.next

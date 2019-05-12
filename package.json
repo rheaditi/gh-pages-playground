@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
   "devDependencies": {},
   "scripts": {
+    "build": "next build",
+    "start": "next",
+    "start:prod": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
