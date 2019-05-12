@@ -1,8 +1,13 @@
 {
   "name": "gh-pages-playground",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "start": "next",
+    "start:prod": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+  },
   "dependencies": {
     "@zeit/next-typescript": "^1.1.1",
     "next": "^8.1.0",
@@ -13,21 +18,8 @@
     "babel-plugin-styled-components": "^1.10.0",
     "styled-components": "^4.2.0"
   },
-  "scripts": {
-    "build": "next build",
-    "start": "next",
-    "start:prod": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rheaditi/gh-pages-playground.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rheaditi/gh-pages-playground/issues"
-  },
-  "homepage": "https://github.com/rheaditi/gh-pages-playground#readme"
+  }
 }
