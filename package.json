@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "styled-components": "^4.2.0"
+  },
   "scripts": {
     "build": "next build",
     "start": "next",
